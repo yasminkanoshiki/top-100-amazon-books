@@ -5,8 +5,8 @@ import plotly.express as px
 
 st.set_page_config(layout='wide')
 
-df_reviews = pd.read_csv('C:/Datasets/livros_amazon/customer reviews.csv')
-df_top100_books = pd.read_csv('C:/Datasets/livros_amazon/Top-100 Trending Books.csv')
+df_reviews = pd.read_csv('./livros_amazon/customer reviews.csv')
+df_top100_books = pd.read_csv('./livros_amazon/Top-100 Trending Books.csv')
 
 price_max = df_top100_books['book price'].max()
 price_min = df_top100_books['book price'].min()

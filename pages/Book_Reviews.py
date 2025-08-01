@@ -3,8 +3,8 @@ import pandas as pd
 
 st.set_page_config(layout='wide')
 
-df_reviews = pd.read_csv('C:/Datasets/livros_amazon/customer reviews.csv')
-df_top100_books = pd.read_csv('C:/Datasets/livros_amazon/Top-100 Trending Books.csv')
+df_reviews = pd.read_csv('./livros_amazon/customer reviews.csv')
+df_top100_books = pd.read_csv('./livros_amazon/Top-100 Trending Books.csv')
 
 def get_stars(rating):
     full_stars = int(rating)  
